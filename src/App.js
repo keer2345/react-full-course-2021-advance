@@ -1,9 +1,12 @@
 import React from 'react'
+import Setup from './tutorial/02-useEffect/setup/1-useEffect-basics'
+import Final from './tutorial/02-useEffect/final/1-useEffect-basics'
 
 const App = () => {
   return (
     <div className='container'>
-      <h2>React Advanced Tutorial</h2>
+      <Setup />
+      <Final />
     </div>
   )
 }
