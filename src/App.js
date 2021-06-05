@@ -1,6 +1,6 @@
 import React from 'react'
-import Setup from './tutorial/03-conditional-rendering/setup/2-short-circuit'
-import Final from './tutorial/03-conditional-rendering/final/2-short-circuit'
+import Setup from './tutorial/03-conditional-rendering/setup/3-show-hide'
+import Final from './tutorial/03-conditional-rendering/final/3-show-hide'
 
 const App = () => {
   return (
