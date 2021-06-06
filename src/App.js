@@ -1,6 +1,6 @@
 import React from 'react'
-import Setup from './tutorial/04-forms/setup/2-multiple-inputs'
-import Final from './tutorial/04-forms/final/2-multiple-inputs'
+import Setup from './tutorial/05-useRef/setup/1-useRef-basics'
+import Final from './tutorial/05-useRef/final/1-useRef-basics'
 
 const App = () => {
   return (
