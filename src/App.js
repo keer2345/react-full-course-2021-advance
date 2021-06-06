@@ -1,6 +1,6 @@
 import React from 'react'
-import Setup from './tutorial/05-useRef/setup/1-useRef-basics'
-import Final from './tutorial/05-useRef/final/1-useRef-basics'
+import Setup from './tutorial/06-useReducer/setup'
+import Final from './tutorial/06-useReducer/final'
 
 const App = () => {
   return (
