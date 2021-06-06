@@ -3,12 +3,20 @@ import Modal from './Modal'
 import { data } from '../../../data'
 
 const reducer = (state, action) => {
-  if (action.type === 'TESTING') {
+  if (action.type === 'ADD_ITEM') {
+    const newPeople = [...state.people, action.payload]
     return {
       ...state,
-      people: data,
+      people: newPeople,
       isModalOpen: true,
       modalContent: 'item add success'
+    }
+  }
+  if (action.type === 'NO_VALUE') {
+    return {
+      ...state,
+      isModaleOpen: true,
+      modalContent: 'please enter value'
     }
   }
   throw new Error('no matching action type')
@@ -27,9 +35,11 @@ const Index = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (name) {
-      dispatch({ type: 'TESTING' })
+      const newPeople = { id: new Date().getTime().toString(), name }
+      dispatch({ type: 'ADD_ITEM', payload: newPeople })
+      setName('')
     } else {
-      dispatch({ type: 'RANDOM' })
+      dispatch({ type: 'NO_VALUE' })
     }
   }
   return (
