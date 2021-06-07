@@ -1,6 +1,6 @@
 import React from 'react'
-import Setup from './tutorial/06-useReducer/setup'
-import Final from './tutorial/06-useReducer/final'
+import Setup from './tutorial/07-prop-drilling/setup/1-prop-drilling'
+import Final from './tutorial/07-prop-drilling/final/1-prop-drilling'
 
 const App = () => {
   return (
